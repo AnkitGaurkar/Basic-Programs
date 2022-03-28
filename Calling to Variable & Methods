@@ -1,0 +1,43 @@
+# Basic-Programs
+
+package com;
+
+public class Student {
+	
+	int sid;   //instance var
+	String name;     //instace var
+	static String trainer_name;    //static var
+	
+	void show()       //non static OR instance method
+	{
+		int a=0;   //local var
+		
+		System.out.println(sid);
+		System.out.println(name);
+		System.out.println(trainer_name);
+		System.out.println(a);  //local var are need to initialized at the time of declaration
+	}
+	static void disp()
+	{
+		Student s1=new Student();  //object referance  created for non-static  members
+		
+		System.out.println(s1.sid);
+		System.out.println(s1.name);
+		System.out.println(trainer_name);
+		System.out.println(Student.trainer_name);//preffered approach is to call it using class name
+		
+		
+		System.out.println(s1.trainer_name); //not preffered TO CALL static using object
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		disp();
+		Student.disp();
+		
+		Student s2=new Student();
+		s2.show();
+	}
+
+}
