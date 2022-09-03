@@ -1,0 +1,15 @@
+# Basic-Programs
+
+static int a=44;
+	static int b=33;
+	
+	public static int sum(int a,int b)
+	{
+	int sum=a+b;
+	return sum;
+	}
+public static void main (String args[])
+{
+	int sum=sum(a,b);
+	System.out.println(sum);
+}
