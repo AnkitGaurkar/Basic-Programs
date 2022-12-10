@@ -1,0 +1,58 @@
+package com;
+
+import java.util.Arrays;
+import java.util.Scanner;
+class Demo{
+	
+int accno;
+String name;
+float amount;
+
+void insert(int acc,String n,float amt)
+{
+	accno=acc;
+	name=n;
+	amount=amt;
+}
+void deposit(float amt)
+{
+	amount=amount+amt;
+	System.out.println("Successfully Deposited");
+}
+void withdrawal(float amt)
+{
+	if(amount<amt)
+	{
+		System.out.println("Insufficient Money");
+	}
+	else
+	{
+		amount=amount-amt;
+		System.out.println(amt+"Withdrawal MOney");
+	}
+}
+void checkBalance()
+{
+	System.out.println(amount+" Your Balance");
+}
+void disp()
+{
+	System.out.println(accno+" "+name+" "+amount);
+}
+
+public static void main (String[]args)
+{
+	Demo d=new Demo(),d2=new Demo();
+	d.insert(123, "Ankit", 2000);
+	d2.insert(201, "Rohan", 30000);
+	//d.checkBalance();
+	d2.checkBalance();
+	d.deposit(345);
+	d.checkBalance();
+	d.withdrawal(200);
+	d.checkBalance();
+	
+
+	}
+	}
+	
