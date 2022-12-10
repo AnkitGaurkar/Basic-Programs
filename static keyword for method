@@ -1,0 +1,31 @@
+package com;
+
+class Demo{
+	int id;
+	String name;
+	static String clgName="PIBM";
+	
+	static void change()
+	{
+		clgName="D.Y.Patil";
+	}
+	Demo(int i,String n)
+	{
+		id=i;
+		name=n;
+	}
+	void disp()
+	{
+		System.out.println(id+" "+name+" "+clgName);
+	}
+	public static void main (String []args)
+	{
+	Demo.change();//or also change();
+	
+	Demo d=new Demo(22,"Ankit");
+	Demo d2=new Demo(33,"Rohan");
+	d.disp();
+	d2.disp();
+	
+}
+}
