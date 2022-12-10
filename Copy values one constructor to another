@@ -1,0 +1,29 @@
+package com;
+
+class Demo{
+	
+	int id;
+	String name;
+	
+	Demo(int i,String n)
+	{
+		id=i;
+		name=n;
+		System.out.println(id+" "+name);
+	}
+	Demo(Demo d)
+	{
+		id=d.id;
+		name=d.name;
+		
+		System.out.println(id+" "+name);
+	}
+	
+	public static void main(String[]args)
+	{
+	
+		Demo d=new Demo(11,"Ankit");
+		Demo d2=new Demo(d);
+		
+}
+}
