@@ -1,0 +1,21 @@
+package com;
+
+class Demo{
+	
+	void m()
+	{
+		System.out.println("hello m");
+	}
+	void n()
+	{
+		this.m();//or also m();
+		System.out.println("hello n");
+	}
+	
+	public static void main (String []args)
+	{
+	
+		Demo d=new Demo();
+		d.n();
+}
+}
