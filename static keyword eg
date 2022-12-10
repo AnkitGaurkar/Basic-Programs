@@ -1,0 +1,25 @@
+package com;
+
+class Demo{
+	int rollno;
+	String name;
+	static String collegeName="New High Scool Main";
+	
+	Demo(int r,String n)
+	{
+		rollno=r;
+		name=n;
+	}
+	void disp()
+	{
+		System.out.println(rollno+" "+name+" "+collegeName);
+	}
+	public static void main (String []args)
+	{
+		Demo d=new Demo(1,"Ankit");
+		Demo d1=new Demo(2, "Rohan"),d3=new Demo(3, "Soham");
+		d.disp();
+		d1.disp();
+		d3.disp();
+}
+}
