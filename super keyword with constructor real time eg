@@ -1,0 +1,34 @@
+package com;
+
+class Person
+{
+	int id;
+	String name;
+	
+	Person(int id,String name)
+	{
+		this.id=id;
+		this.name=name;
+	}
+}
+class Employee extends Person
+{
+	float salary;
+	Employee(int id,String name,float salary)
+	{
+		super(id,name);
+		this.salary=salary;
+	}
+	void disp()
+	{
+		System.out.println(id+" "+name+" "+salary);
+	}
+}
+class Demo
+{	
+	public static void main (String []args)
+	{
+	Employee e1=new Employee(3, "Ankit", 28888);
+	e1.disp();
+	}
+}
