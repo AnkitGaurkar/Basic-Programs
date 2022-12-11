@@ -1,0 +1,26 @@
+package com;
+
+class Animal
+{
+	Animal()
+	{
+		System.out.println("Eating...");
+	}
+}
+class Dog extends Animal
+{
+	Dog(){
+		
+		super();
+		System.out.println("Eating Biscuit");	
+	}
+}
+class Demo
+{	
+	
+	public static void main (String []args)
+	{
+	Dog d=new Dog();
+		
+	}
+}
