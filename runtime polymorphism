@@ -1,0 +1,39 @@
+package com;
+
+class Bank
+{
+	float rateOfIntrest()
+	{
+		return 0;
+		
+	}
+}
+class SBI extends Bank
+{
+	float rateOfIntrest()
+	{
+		return 7;
+		
+	}
+}
+class Axis extends Bank
+{
+	float rateOfIntrest()
+	{
+		return 8;
+		
+	}
+}
+
+class Demo
+{	
+	public static void main (String []args)
+	{
+ Bank b;          // or we can use Bank b=new SBI(); & also Bank b=new Axis();
+	b=new SBI();
+	System.out.println(b.rateOfIntrest());
+	
+	b=new Axis();
+	System.out.println(b.rateOfIntrest());
+	}
+}
