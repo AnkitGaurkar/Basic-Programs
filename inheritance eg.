@@ -1,0 +1,20 @@
+package com;
+
+class Employee{
+	
+	int salary=19999;
+}
+class Programmer extends Employee
+{
+	float bonus=2300;
+}
+
+class Demo
+{
+	public static void main (String []args)
+	{
+	Programmer p1=new Programmer();
+	System.out.println(p1.salary);
+	System.out.println(p1.bonus);
+}
+}
