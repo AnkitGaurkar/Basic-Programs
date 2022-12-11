@@ -1,0 +1,39 @@
+package com;
+
+class Animal
+{
+	String eating()
+	{
+		return "Eating";
+		
+	}
+}
+class Cat extends Animal
+{
+	String eating()
+	{
+		return "Mouse";
+		
+	}
+}
+class Dog extends Animal
+{
+	String eating()
+	{
+		return "Chicken";
+		
+	}
+}
+class Demo
+{	
+	public static void main (String []args)
+	{
+	
+		Dog d=new Dog();
+		System.out.println(d.eating());
+		System.out.println(d.eating());
+		
+		Cat c=new Cat();
+		System.out.println(c.eating());
+	}
+}
