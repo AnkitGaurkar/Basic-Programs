@@ -1,0 +1,27 @@
+package com;
+
+interface inf1
+{
+	void run();
+}
+interface inf2
+{
+	void run();
+}
+class A1 implements inf1,inf2
+{
+	public void run()
+	{
+		System.out.println("Running...");
+	}
+}
+
+
+class Demo
+{	
+	public static void main (String []args)
+	{
+		A1 a=new A1();
+		a.run();
+}
+	}
