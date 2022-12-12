@@ -1,0 +1,41 @@
+package com;
+interface P
+{
+	void a();
+	void b();
+	void c();
+	void d();
+}
+abstract class M implements P
+{
+	public void c()
+	{
+		System.out.println("I am C");
+	}
+}
+class N extends M
+{
+	public void a() {
+		System.out.println("I am A");
+	}
+	public void b()
+	{
+	System.out.println("I am B");	
+	}
+	public void d()
+	{
+	System.out.println("I am D");	
+	}
+}
+
+class Demo
+{	
+	public static void main (String []args)
+	{
+	
+		P p1=new N();
+		p1.a();
+		p1.b();p1.c();p1.d();
+		
+}
+	}
