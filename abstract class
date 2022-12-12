@@ -1,0 +1,43 @@
+package com;
+
+abstract class Bank
+{
+	abstract float rateOfInterest();
+}
+class SBI extends Bank
+{
+	float rateOfInterest()
+	{
+		return 0;
+		
+	}
+}
+class ICICI extends Bank
+{
+	float rateOfInterest()
+	{
+		return 8;
+	}
+}
+class BOI extends Bank
+{
+	float rateOfInterest()
+	{
+		return 4;
+		
+	}
+}
+
+class Demo
+{	
+	public static void main (String []args)
+	{
+ 
+		Bank b;
+		b=new SBI();
+		System.out.println(b.rateOfInterest());
+		b=new ICICI();
+		System.out.println(b.rateOfInterest());
+		
+	}
+}
