@@ -1,0 +1,32 @@
+interface inf1
+{
+	void run();
+}
+interface inf2
+{
+	void stop();
+}
+class A1 implements inf1,inf2
+{
+	public void run()
+	{
+		System.out.println("Runing...");
+	}
+	public void stop()
+	{
+		System.out.println("Stop the car...");
+	}
+}
+
+
+class Demo
+{	
+	public static void main (String []args)
+	{
+ 
+		A1 a=new A1();
+		a.run();
+		a.stop();
+		
+}
+	}
