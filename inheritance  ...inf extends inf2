@@ -1,0 +1,29 @@
+interface inf1
+{
+	void run();
+}
+interface inf2 extends inf1
+{
+	void stop();
+}
+class A1 implements inf2
+{
+	public void run()
+	{
+		System.out.println("Running...");
+	}
+	public void stop()
+	{
+		System.out.println("Stop the vehicle");
+	}
+}
+class Demo
+{	
+	public static void main (String []args)
+	{
+	
+		A1 a=new A1();
+		a.stop();
+		a.run();
+}
+	}
