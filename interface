@@ -1,0 +1,22 @@
+package com;
+
+interface inf
+{
+	void run();
+}
+class A implements inf
+{
+	public void run()
+	{
+		System.out.println("Running");
+	}
+}
+class Demo
+{	
+	public static void main (String []args)
+	{
+ A a1=new A();
+ a1.run();
+		
+	}
+}
