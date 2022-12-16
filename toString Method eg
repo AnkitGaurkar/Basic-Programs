@@ -1,0 +1,26 @@
+package com;
+
+public class Demo2 {
+	int id;
+	String name;
+	static String clgname="PIBM";
+	
+	public Demo2(int id,String name)
+	{
+		this.id=id;
+		this.name=name;
+	}
+	public String toString() //its use for to access all object as String format...is represent from Object class
+	{
+		return id+" "+name+" "+clgname;
+	}
+	public static void main(String[]args)
+	{
+	
+		Demo2 d1=new Demo2(2, "Ankit");
+		Demo2 d2=new Demo2(3,"Ankit2");
+		
+		System.out.println(d1);
+		System.out.println(d2);
+	}
+}
