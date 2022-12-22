@@ -1,0 +1,33 @@
+public class Demo2 {
+
+	public static void main(String[] args) {
+		
+		String n="Ankit Gaurkar Sangita Sunil Rohan Ankit Rohan";
+		
+		String[] ns=n.split("\\s");
+		int count=0;
+		
+		for(int i=0;i<ns.length;i++)
+		{
+			count=1;
+		
+		{
+			for(int j=i+1;j<ns.length;j++)
+			{
+				if(ns[i].equals(ns[j]))
+				{
+					count ++;
+					ns[j]="0";
+				}
+			}
+		}
+			if(ns[i]!="0")
+			{
+				System.out.println(ns[i]+"="+count);
+			}
+		}
+			
+		}
+		}
+
+	
