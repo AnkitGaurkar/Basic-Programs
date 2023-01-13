@@ -1,0 +1,30 @@
+package com;
+
+
+import java.io.FileWriter;
+import java.io.IOException;
+
+public class FileOperation {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		
+		try {
+			FileWriter fw = new FileWriter("C:Ankit.txt");
+		
+			fw.write("I am Ankit Gaurkar");
+			
+			fw.close();
+			
+			System.out.println("Content is wrote Successfully...!");
+			
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			System.out.println("Unexpected Error..!");
+			e.printStackTrace();
+		}
+		
+	}
+
+}
