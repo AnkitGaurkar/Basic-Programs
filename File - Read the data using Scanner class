@@ -1,0 +1,34 @@
+package com;
+
+
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.Scanner;
+
+public class FileOperation {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		File f1=new File("C:Ankit.txt");
+		
+		Scanner dataReader;
+		try {
+			dataReader= new Scanner(f1);
+	
+		while(dataReader.hasNext())
+		{
+			String fileData=dataReader.next();
+			
+			System.out.println(fileData);
+		}
+		dataReader.close();
+	}catch(FileNotFoundException fn)
+		{
+		System.out.println("Unexpected Exception...!");
+		
+		fn.printStackTrace();
+		}
+
+}
+}
